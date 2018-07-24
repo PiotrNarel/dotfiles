@@ -9,6 +9,8 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+alias gcc=gcc -Wall -Wextra
+alias g++=g++ -Wall -Wextra
 
 # Powerline
 if [ -f `which powerline-daemon` ]; then
