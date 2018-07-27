@@ -24,6 +24,8 @@ Plugin 'phenomenes/ansible-snippets'
 
 Plugin 'yggdroot/indentline'
 
+Plugin 'townk/vim-autoclose'
+
 call vundle#end()            
 filetype plugin indent on   
 
