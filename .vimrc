@@ -26,6 +26,8 @@ Plugin 'yggdroot/indentline'
 
 Plugin 'townk/vim-autoclose'
 
+Plugin 'scrooloose/nerdtree'
+
 call vundle#end()            
 filetype plugin indent on   
 
@@ -76,6 +78,9 @@ set matchpairs+=<:>
 " Complete all tags
 set taglength=0
 
+" Enable mouse
+set mouse=a
+
 " --- gitgutter settings
 set updatetime=100
 
@@ -106,3 +111,17 @@ let g:UltiSnipsUsePythonVersion = 3
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" --- Nerdtree
+" F12 mapping
+map <F12> :NERDTreeToggle<CR>
+
+" Show hidden files in nerdtree
+let NERDTreeShowHidden=1
+
+" Close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Open Nerdtree when vim starts up on opening a directory
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
