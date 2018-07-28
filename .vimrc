@@ -8,8 +8,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'tpope/vim-fugitive'
-
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 Plugin 'cocopon/iceberg.vim'
