@@ -9,8 +9,8 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-alias gcc="gcc -Wall -Wextra"
-alias g++="g++ -Wall -Wextra"
+alias gcc="colorgcc -Wall -Wextra"
+alias g++="colorg++ -Wall -Wextra"
 
 # Powerline
 if [ -f `which powerline-daemon` ]; then
