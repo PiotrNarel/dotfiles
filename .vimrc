@@ -12,6 +12,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 Plugin 'cocopon/iceberg.vim'
 
+Plugin 'xero/blaquemagick.vim'
+
 Plugin 'honza/vim-snippets'
 
 Plugin 'sirver/ultisnips'
